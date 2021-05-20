@@ -165,21 +165,21 @@ main {
 */
 }
 
-/*SERVICES*/
-.services {
+/*	REGULATIONS	*/
+.regulations {
 	background-position: center;
 	background-size: cover;
 	position: relative;
-&::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #3D3D3D;
-	opacity: 80%;
-}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #3D3D3D;
+		opacity: 80%;
+	}
 
 .regulations__container {
 	display: grid;
@@ -187,30 +187,28 @@ main {
 	max-width: 1440px;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .regulations__head {
-	display: grid;
+	
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
 	align-items: end;
 
 }
 
-.regulations__head-line-one {}
-
 .regulations__head-title {
-	justify-self: center;
-}
-
-.regulations__head-line-two {}
-
-.regulations__head-line-one,
-.regulations__head-line-two {
-	height: 3px;
-	width: 6rem;
-	background-color: var(--border-color);
-}
+	position: relative;
+	&:before {
+    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width: 1000px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 1px solid #000;   /* бордер псевдо дива, т.е. сама линия */
+    top:50%;                         /* позиционирование по вертикали */
+    right: 110px;
+	}
 
 .regulations__content {}
 
@@ -250,3 +248,5 @@ main {
 	font-size: 20px;
 	float: left;
 }
+
+/*	SERVICES	*/
