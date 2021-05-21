@@ -1,0 +1,108 @@
+.body-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(9, auto);
+	grid-template-areas: 'header' 'regulations' 'services' 'question' 'about' 'gallery' 'price' 'request' 'footer';
+}
+header {
+	grid-area: header;
+}
+regulations {
+	grid-area: regulations;
+}
+
+.header {
+	&-container {
+		max-height: 1372px;
+		max-width: 652px;
+		margin-top: 12px;
+		margin-left: 91px;
+	}
+	&__top {
+	}
+	&__top-logo {
+	}
+	.logo {
+	}
+	.logo__img {
+	}
+	&__top-menu {
+	}
+	.menu {
+	}
+	.menu__list {
+	}
+	.menu__list-item {
+	}
+	.menu__link.menu__link--activ {
+	}
+	.menu__link {
+	}
+	&__top-contact {
+	}
+	&__top-contact-tel {
+	}
+	&__top-contact-call {
+	}
+	&__content {
+	}
+	&__content-title {
+	}
+	&__content-description {
+	}
+	&__content-button {
+	}
+	.button {
+	}
+	.button__link {
+	}
+	&__content-decor {
+	}
+	&__img {
+	}
+}
+
+.regulations {
+}
+.regulations__container {
+}
+.regulations__head {
+}
+.regulations__head-title {
+}
+.regulations__content {
+}
+.regulations__content-list {
+}
+.regulations__list-item {
+}
+.regulations__list-item--special {
+}
+.services {
+}
+.services__container {
+}
+.question {
+}
+.question__container {
+}
+.about {
+}
+.about__container {
+}
+.gallery {
+}
+.gallery__container {
+}
+.price {
+}
+.price__container {
+}
+.request {
+}
+.request__container {
+}
+.footer {
+}
+.footer__container {
+}
